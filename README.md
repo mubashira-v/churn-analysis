@@ -59,6 +59,7 @@ STEP 2 - Power BI Transform
 2.       Rename Column – Attribute >> Services & Value >> Status
 
 STEP 3 - Power BI Measure
+
 Total Customers = Count(prod_Churn[Customer_ID])
 New Joiners = CALCULATE(COUNT(prod_Churn[Customer_ID]), prod_Churn[Customer_Status] = "Joined")
 Total Churn = SUM(prod_Churn[Churn Status])

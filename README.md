@@ -214,13 +214,7 @@ SELECT
 
     ISNULL(Churn_Category, 'Others') AS Churn_Category,
 
-    ISNULL(Churn_Reason , 'Others') AS Churn_Reason
-
- 
-
-INTO [db_Churn].[dbo].[prod_Churn]
-
-FROM [db_Churn].[dbo].[stg_Churn];
+    ISNULL(Churn_Reason , 'Others') AS Churn_Reason INTO [db_Churn].[dbo].[prod_Churn] FROM [db_Churn].[dbo].[stg_Churn];
 
  
 

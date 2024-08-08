@@ -56,7 +56,7 @@ Remember to add customerId as primary key and allow nulls for all remaining colu
 
 Data Exploration – Check Distinct Values
 
-SELECT Gender, Count(Gender) as TotalCount,Count(Gender)  1.0 / (Select Count() from stg_Churn)  as Percentage from stg_Churn Group by Gender
+        SELECT Gender, Count(Gender) as TotalCount,Count(Gender)  1.0 / (Select Count() from stg_Churn)  as Percentage from stg_Churn Group by Gender
 
  
 
